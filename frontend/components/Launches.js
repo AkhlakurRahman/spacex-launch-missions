@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
+import Loader from './Loader';
 
 const LAUNCH_DATA_QUERY = gql`
   {
@@ -17,7 +18,7 @@ const LAUNCH_DATA_QUERY = gql`
 const Launches = () => {
   const { loading, error, data } = useQuery(LAUNCH_DATA_QUERY);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader />;
   if (error) return <p>Error :(</p>;
 
   return data.launches.map(({ flight_number, mission_name }) => (

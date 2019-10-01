@@ -45,7 +45,9 @@ const IntroStyles = styled.div`
           padding: 1rem 2rem;
           text-decoration: none;
           border: 1px solid #6cd0e0;
+          border-radius: 0.5rem;
           display: inline-block;
+          transition: background 0.4s, color 0.5s ease-in-out;
 
           &:hover {
             background: #63a8c7;
