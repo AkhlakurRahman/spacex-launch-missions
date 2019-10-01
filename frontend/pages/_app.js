@@ -1,20 +1,24 @@
 import App from 'next/app';
+import { ApolloProvider } from '@apollo/react-hooks';
 
 import Page from '../components/Page';
+import withApollo from '../lib/withData';
 import GlobalStyles from '../components/styles/GlobalStyles';
 
-class MyPortfolio extends App {
+class MyApp extends App {
   render() {
-    const { Component } = this.props;
+    const { Component, pageProps, apollo } = this.props;
     return (
       <>
-        <Page>
-          <Component></Component>
-        </Page>
-        <GlobalStyles />
+        <ApolloProvider client={apollo}>
+          <Page>
+            <Component {...pageProps} />
+          </Page>
+          <GlobalStyles />
+        </ApolloProvider>
       </>
     );
   }
 }
 
-export default MyPortfolio;
+export default withApollo(MyApp);

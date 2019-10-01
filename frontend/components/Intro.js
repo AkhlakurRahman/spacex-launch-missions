@@ -53,10 +53,6 @@ const IntroStyles = styled.div`
             color: #fff;
           }
         }
-
-        a:last-child {
-          margin-right: none;
-        }
       }
     }
   }
