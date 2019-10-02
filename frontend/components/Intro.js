@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
+import Header from './Header';
+
 const IntroStyles = styled.div`
   background-image: url(/static/hero.jpg);
   background-size: cover;
@@ -64,15 +66,7 @@ const Intro = () => {
   return (
     <IntroStyles>
       <div className='intro-main'>
-        <Link href='/'>
-          <a>
-            <img
-              src='/static/logo.png'
-              alt='SpaceX'
-              style={{ width: '200px' }}
-            />
-          </a>
-        </Link>
+        <Header />
         <div className='content'>
           <h2>SpaceX's Missions and Rockets</h2>
           <p>
