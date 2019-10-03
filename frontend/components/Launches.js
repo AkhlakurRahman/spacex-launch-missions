@@ -18,7 +18,8 @@ const LaunchesStyle = styled.div`
 
   h2 {
     font-size: 4.5rem;
-    margin: 3rem 0;
+    margin: 4rem 0;
+    margin-left: -50rem;
     font-weight: 400;
   }
 `;
