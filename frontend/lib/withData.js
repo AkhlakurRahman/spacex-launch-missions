@@ -5,7 +5,7 @@ import { endpoint } from '../config';
 export default withApollo(
   ({ ctx, headers, initialState }) =>
     new ApolloClient({
-      uri: endpoint,
+      uri: process.env.NODE_ENV === 'development' ? endpoint : endpoint,
       cache: new InMemoryCache().restore(initialState || {})
     })
 );
