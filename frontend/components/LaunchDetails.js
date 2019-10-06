@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
@@ -83,6 +84,32 @@ const LaunchDetailsStyles = styled.div`
     }
     .rocket {
       margin-top: 3rem;
+
+      p {
+        margin-bottom: 3rem;
+      }
+
+      a {
+        font-family: ${props => props.theme.font_display};
+        font-size: 1.7rem;
+        text-decoration: none;
+        border: 1px solid #6cd0e0;
+        border-radius: 0.2rem;
+        background: #63a8c7;
+        color: #fff;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: background 0.3s, color 0.5s;
+
+        :hover {
+          background: #fff;
+          color: #63a8c7;
+        }
+
+        :focus {
+          outline: none;
+        }
+      }
     }
   }
 `;
@@ -139,6 +166,9 @@ const LaunchDetails = ({ flight_number }) => {
             <strong>Rocket Type: </strong>
             {rocket_type}
           </p>
+          <Link href={{ pathname: '/rocketDetails', query: { rocket_id } }}>
+            <a>Details</a>
+          </Link>
         </div>
       </div>
     </LaunchDetailsStyles>
