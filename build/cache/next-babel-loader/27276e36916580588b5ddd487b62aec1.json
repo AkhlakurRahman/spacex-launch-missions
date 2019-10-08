@@ -1,0 +1,1 @@
+{"ast":null,"code":"var formatMoney = new Intl.NumberFormat('en-US', {\n  style: 'currency',\n  currency: 'USD',\n  minimumFractionDigits: 2\n});\nexport default formatMoney;","map":null,"metadata":{},"sourceType":"module"}

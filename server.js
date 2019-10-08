@@ -1,6 +1,7 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const cors = require('cors');
+const path = require('path');
 
 const schema = require('./schema');
 
@@ -16,6 +17,12 @@ app.use(
     graphiql: true
   })
 );
+
+app.use(express.static('public'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../frontend/build'));
+});
 
 const PORT = process.env.BACKEND_PORT || 4444;
 

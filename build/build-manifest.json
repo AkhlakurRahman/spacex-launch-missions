@@ -1,0 +1,45 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ],
+    "/details": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ],
+    "/launches": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ],
+    "/rocketDetails": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ],
+    "/rockets": [
+      "static/runtime/webpack-035ac2b14bde147cb4a8.js",
+      "static/chunks/commons.4294489d3822898ab166.js",
+      "static/runtime/main-96a696684555de5666ac.js"
+    ]
+  }
+}
