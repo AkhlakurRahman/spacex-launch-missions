@@ -21,7 +21,7 @@ app.use(
 app.use(express.static('public'));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../frontend/build'));
+  res.sendFile(path.resolve(__dirname, 'build'));
 });
 
 const PORT = process.env.BACKEND_PORT || 4444;
