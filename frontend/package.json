@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && mv build ../",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "serve ./out"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.1",
@@ -19,6 +19,5 @@
     "react-dom": "16.10.1",
     "react-moment": "^0.9.2",
     "styled-components": "^4.4.0"
-  },
-  "proxy": "http://localhost:4444"
+  }
 }

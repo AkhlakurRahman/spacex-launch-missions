@@ -24,6 +24,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'build'));
 });
 
-const PORT = process.env.BACKEND_PORT || 4444;
+const PORT = process.env.PORT || 4444;
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));

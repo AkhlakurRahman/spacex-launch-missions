@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport RocketItems from '../components/RocketItems';\n\nconst rocketDetails = ({\n  query: {\n    rocket_id\n  }\n}) => {\n  return __jsx(RocketItems, {\n    rocket_id: rocket_id\n  });\n};\n\nexport default rocketDetails;","map":null,"metadata":{},"sourceType":"module"}

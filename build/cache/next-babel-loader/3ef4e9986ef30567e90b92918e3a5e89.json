@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Launches from '../components/Launches';\n\nconst launches = () => {\n  return __jsx(\"div\", null, __jsx(Launches, null));\n};\n\nexport default launches;","map":null,"metadata":{},"sourceType":"module"}
